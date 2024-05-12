@@ -45,7 +45,7 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
     'https://book-lovers.vercel.app',
-    'https://www.booklovers.uz/',
+    'https://www.booklovers.uz',
 )
 ROOT_URLCONF = 'booklover.urls'
 
