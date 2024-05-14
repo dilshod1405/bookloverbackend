@@ -8,7 +8,7 @@ from .serializers import BookDetailsSerializer
 class BookAdmin(admin.ModelAdmin):
     serializer_class = BookDetailsSerializer
     list_display = ('name', 'author', 'category', 'created_at', 'read_count', 'recommended','id')
-    list_filter = ('category', 'created_at', 'read_count', 'author', 'recommended')
+    list_filter = ('category', 'created_at', 'author', 'recommended')
     search_fields = ('name', 'author', 'description', 'category__name', 'created_at')
     ordering = ('id',)
 
